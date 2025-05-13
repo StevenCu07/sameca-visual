@@ -1,0 +1,17 @@
+<div class="container py-4">
+
+  <!-- Logo -->
+  <div class="text-center mb-4">
+    <img src="../assets/img/logo.png" alt="Logo Sameca" style="max-width: 200px;" class="img-fluid">
+  </div>
+
+  <h1 class="text-center mb-5">Clases de Uso del Sistema</h1>
+
+  <!-- Secciones -->
+  <div *ngFor="let sec of secciones" class="mb-5">
+    <h3>{{ sec.titulo }}</h3>
+    <p>{{ sec.descripcion }}</p>
+    <img [src]="'assets/img/' + sec.imagen" class="img-fluid rounded border" [alt]="sec.titulo">
+  </div>
+
+</div>
