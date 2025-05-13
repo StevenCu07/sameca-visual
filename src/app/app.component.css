@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  h1, h2, h3 {
+    color: #000000;
+  }
+  
+  .team-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .team-section li {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .rounded {
+    border-radius: 0.5rem;
+  }
+  
+  .border {
+    border: 1px solid #ddd;
+  }

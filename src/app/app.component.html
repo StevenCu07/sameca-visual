@@ -2,16 +2,31 @@
 
   <!-- Logo -->
   <div class="text-center mb-4">
-    <img src="../assets/img/logo.png" alt="Logo Sameca" style="max-width: 200px;" class="img-fluid">
+    <img src="src\assets\img\logo.png" alt="Logo Sameca" style="max-width: 200px;" class="img-fluid">
   </div>
 
   <h1 class="text-center mb-5">Clases de Uso del Sistema</h1>
 
   <!-- Secciones -->
-  <div *ngFor="let sec of secciones" class="mb-5">
-    <h3>{{ sec.titulo }}</h3>
-    <p>{{ sec.descripcion }}</p>
-    <img [src]="'assets/img/' + sec.imagen" class="img-fluid rounded border" [alt]="sec.titulo">
+  <div *ngFor="let sec of secciones" class="card mb-3">
+    <div class="card-header" (click)="toggleSection(sec)">
+      <h3>{{ sec.titulo }}</h3>
+    </div>
+    <div class="card-body" [hidden]="!sec.expanded">
+      <p>{{ sec.descripcion }}</p>
+      <!-- Reemplazar imagen con un icono relacionado -->
+      <i class="fas fa-info-circle" style="font-size: 50px; color: #17a2b8;"></i>
+    </div>
+  </div>
+
+  <!-- Miembros del equipo -->
+  <div class="team-section mt-5">
+    <h2 class="text-center">Miembros del Equipo</h2>
+    <ul class="list-unstyled text-center">
+      <li>Andrés</li>
+      <li>Juan</li>
+      <li>Brandon</li>
+    </ul>
   </div>
 
 </div>
